@@ -1,0 +1,49 @@
+
+.projects {
+    background-color: $beige;
+    padding: 100px 0px;
+
+}
+.project {
+
+    background-color: $white;
+
+    #{&}-title {
+        color: $orange;
+        padding: 20px 0;
+        font-size: 2.0rem;
+        font-weight: 700;
+    }
+    #{&}-description {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+}
+
+.about {
+    min-height: 400px;
+    background-color: $blue;
+    color: $beige;
+
+    .about-skills {
+        background-color: $orange;
+        width: 100%;
+    }
+}
+
+.connect {
+    font-size: 2.5rem;
+    padding: 25px 0;
+    color: $blue;
+    text-transform: uppercase;
+    a {
+        color: $orange;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    i {
+        color: $blue;
+    }
+
+}

@@ -1,0 +1,21 @@
+<section class="about">
+    {% for item in page.about-section %}
+    <div class="about-title">
+        {{ item.title }}
+    </div>
+    <div class="frow content-between">
+        <div class="about-desc">
+            {{ item.description }}
+        </div>
+        <div class="about-skills">
+            {{ item.skill-title }}
+
+            <ul>
+                {% for item in about-section.skills %}
+                    <li>{{ item.skill-name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,27 @@
+<div class="projects">
+    <div class="frow centered-column">
+        <h1>Projects</h1>
+        {% for item in site.posts limit:4 %} 
+        <div class="project">
+            <div class="frow centered-column">
+                <div class="project-image">
+                    <img src="{{ item.image }}" alt="Image of {{ item.title }}">
+                </div>
+                <div class="project-title">
+                    {{ item.title }}
+                </div>
+                <div class="project-description">
+                    {{ item.description }}
+                </div>
+                <div class="project-skills">
+                    Skills <br> {{ item.skills }}
+                </div>
+                <div class="project-url">
+                    <a href="{{ item.project-url }} target='_blank' ">View Site</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+</div>

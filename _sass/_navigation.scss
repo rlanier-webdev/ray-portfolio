@@ -1,0 +1,45 @@
+.menu {
+    display: none;
+}
+
+.hamburger__menu .menu__icon .navicon {
+    background: $beige;
+    display: block;
+    height: 5px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+}
+.hamburger__menu .menu__icon .navicon:before,
+.hamburger__menu .menu__icon .navicon:after {
+    background: $beige;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamburger__menu .menu__icon .navicon:before {
+    top: 10px;
+}
+.hamburger__menu .menu__icon .navicon:after {
+    top: -10px;
+}
+.hamburger__menu .menu__btn {
+    display: none;
+}
+.hamburger__menu .menu__btn:checked ~ ul.menu {
+    max-height: 240px;
+}
+.hamburger__menu .menu__btn:checked ~ .menu__icon .navicon {
+    background: transparent;
+}
+.hamburger__menu .menu__btn:checked ~ .menu__icon .navicon:before {
+    transform: rotate(-45deg);
+    top: 0px;
+}
+.hamburger__menu .menu__btn:checked ~ .menu__icon .navicon:after {
+    transform: rotate(45deg);
+    top: 0px;
+}
