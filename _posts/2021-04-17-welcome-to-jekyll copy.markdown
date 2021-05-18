@@ -1,6 +1,6 @@
 ---
 layout: post
-image: /imgs/portal.png
+image: /assets/images/portal.png
 title:  "Portal Entertainment"
 description: "A production company that needed a website to showcase the work they've created over the last 30 years."
 skills: "Wix, Website Support"
